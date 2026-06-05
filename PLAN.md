@@ -76,7 +76,7 @@ Phase 1 (Dataset Exploration)
 
 ---
 
-## Phase 3 — Warehouse Design
+## Phase 3 — Implementation Steps
 
 **Objective:** Create all SQL DDL for the database, staging, warehouse, and audit tables.  
 **Deliverable:** `create_tables.sql`  
