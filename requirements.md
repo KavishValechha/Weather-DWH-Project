@@ -1,6 +1,6 @@
 # Business Requirements — Weather Analytics Data Warehouse
 
-**Document Version:** 2.0  
+**Document Version:** 3.0  
 **Date:** June 4, 2026  
 **Status:** Approved  
 
@@ -14,8 +14,7 @@
 4. [Functional Requirements](#4-functional-requirements)
 5. [Non-Functional Requirements](#5-non-functional-requirements)
 6. [Business Questions](#6-business-questions)
-7. [Report-to-Table Traceability](#7-report-to-table-traceability)
-8. [Out of Scope](#8-out-of-scope)
+7. [Out of Scope](#7-out-of-scope)
 
 ---
 
@@ -163,19 +162,7 @@ All SQL DDL must be in a single file `create_tables.sql`. All analytical queries
 
 ---
 
-## 7. Report-to-Table Traceability
-
-| Question Category | Questions | Fact Table | Dimensions Used | Key Source Columns |
-|---|---|---|---|---|
-| Descriptive Analytics | BQ-01 to BQ-08 | `fact_weather_observation` | `dim_date`, `dim_weather_condition` | All measure columns; `Formatted Date`; `Summary`; `Precip Type` |
-| Trend Analysis | BQ-09 to BQ-12 | `fact_weather_observation` | `dim_date` | `Formatted Date`; temperature; wind speed |
-| Comparative Analysis | BQ-13 to BQ-16 | `fact_weather_observation` | `dim_date`, `dim_time`, `dim_weather_condition` | `Precip Type`; `Formatted Date`; all measure columns |
-| Weather Condition Analysis | BQ-17 to BQ-20 | `fact_weather_observation` | `dim_weather_condition`, `dim_time` | `Summary`; `Precip Type`; `Formatted Date` |
-| Anomaly Detection | BQ-21 to BQ-23 | `fact_weather_observation` | `dim_date` | Temperature; visibility; `Formatted Date` |
-
----
-
-## 8. Out of Scope
+## 7. Out of Scope
 
 | Item | Rationale |
 |---|---|
@@ -187,4 +174,4 @@ All SQL DDL must be in a single file `create_tables.sql`. All analytical queries
 
 ---
 
-*End of Document — Business Requirements v2.0*
+*End of Document — Business Requirements v3.0*
