@@ -36,7 +36,7 @@ The goal is to transform the raw file into a structured warehouse that can answe
 
 ## Business Questions
 
-*Descriptive Analytic
+* Descriptive Analytic
 BQ-01: What was the highest recorded temperature, and on which date did it occur?
 BQ-02: What was the lowest recorded temperature, and on which date did it occur?
 BQ-03: What is the overall average temperature across all observations?
